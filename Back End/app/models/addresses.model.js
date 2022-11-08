@@ -15,7 +15,7 @@ module.exports = (mongoose) => {
           },
           unique: true,
         },
-        landmark: { type: String, required: true, trim: true },
+        landmark: { type: String, trim: true },
         zipCode: {
           type: Number,
           required: function () {
