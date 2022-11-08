@@ -8,9 +8,9 @@ db.mongoose = mongoose;
 db.url = dbConfig.url;
 
 // here mongoose is a variable being passed to artist.model.js
-// db.addressess = require("./addressess.model")(mongoose);
-// db.orders = require("./orders.model")(mongoose);
-// db.products = require("./products.model")(mongoose);
-// db.users = require("./users.model")(mongoose);
+db.addressess = require("./addressess.model")(mongoose);
+db.orders = require("./orders.model")(mongoose);
+db.products = require("./products.model")(mongoose);
+db.users = require("./users.model")(mongoose);
 
 module.exports = db;
